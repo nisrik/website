@@ -1,0 +1,20 @@
+/* Trade Gothic.
+   The original site loads "trade-gothic-lt-std-pd1dde" (weight 300) from Squarespace's font host.
+   That file can't be taken with the domain, so pick ONE of these before launch:
+
+   A) Adobe Fonts (you have Creative Cloud): create a Web Project for Trade Gothic Next,
+      add the <link> Adobe gives you to the <head> of each page, and keep the family below.
+
+   B) Self-host files you hold a web licence for (the old Trade Gothic LT files from your earlier job
+      are desktop fonts, so check the licence before converting them), put them in /fonts and uncomment:
+
+   @font-face {
+     font-family: "Trade Gothic";
+     src: url("../fonts/TradeGothic-Light.woff2") format("woff2");
+     font-weight: 300; font-style: normal; font-display: swap;
+   }
+*/
+:root {
+  --font: "Trade Gothic", "Trade Gothic LT Std", "Trade Gothic Next", "trade-gothic-next",
+          "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
