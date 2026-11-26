@@ -1,11 +1,12 @@
 ---
+samples: https://drive.google.com/drive/folders/1f5031ymiWYlFcVfKMMOs8ldbCeNVDmZR
 title: Design Management
 term: Fall 2025
 codes: [HERV-602]
 school: [Indiana University Indianapolis, Herron School of Art and Design]
 cover: images/covers/HERV602-fa25-design-management.jpg
 cover_alt: A fine grid of blue and white marks
-pdf: syllabi/HERV602-fa25-design-management.pdf
+pdf: https://drive.google.com/file/d/1EhvHqfUuxgdhAjXWA0uPUeWglkXisnDT/view
 order: 2
 summary: Graduate-level course exploring business processes and strategic management through the lens of design practice. Topics include managing people, projects, resources, and relationships across various organizational structures. Students developed comprehensive business plans, applying management theories and tools to real-world design contexts.
 ---
@@ -24,9 +25,7 @@ This course covers the practical elements of business and strategic management, 
 
 This course includes both synchronous and asynchronous components.
 
-The “Getting Started” module also includes an introduction to Zoom@IU, so please make sure to familiarize yourself, update your app etc. before the start of classes. We will meet virtually every Monday from 3pm to 5:30 pm Eastern Time.
-
-This course also uses the IU Canvas learning management system. If you have not previously used Canvas, please log into the course, click on Modules tab on the left, and go through the “Getting Started” Module. The course consists of 4 different activities:
+The course consists of 4 different activities:
 
 Readings
 : The readings will vary based on the topic for the week, and will be introduced after each lecture. You don’t need to purchase a textbook in this class, all reading material will be provided. I will provide an overview of the readings for the week at the end of every lecture.
@@ -42,20 +41,18 @@ Business Plan
 
 ## Classes and Assignments
 
-Each week, we will be tackling one topic central to the business process. Each week will have associated readings and lecture slides; and every week will have an assignment: one part of your final business plan, along with 3 case studies over the course. The readings and assignments may be updated before the class, so be sure to check the syllabus and modules each week.
-
-Assignments are due Sundays at Midnight, unless otherwise specified.
+Each week, we will be tackling one topic central to the business process. Each week will have associated readings and lecture slides; and every week will have an assignment: one part of your final business plan, along with 3 case studies over the course.
 
 | Week | Topic | Assignment | Grade | Business Plan |
 |---|---|---|---|---|
-| 01 | Processes and Structures |  |  | Purpose |
-| 02 | Marketing | Case Study: Market Research | 20 | Competition Mapping |
-| 03 | Economics |  |  | Pricing Model |
-| 04 | Operations |  |  | Operating Manual |
-| 05 | Implementation & Measurement | Case Study: Metrics | 20 | Metrics |
-| 06 | Growth | Case Study: Expansion | 20 | Growth and Expansion Plans |
-| 07 | Support Functions |  |  | Organizational Structure |
-| 08 | Long Term Planning | Final Business Plan <br> Course Reflection | 30 <br> 10 | Pitch Presentation |
+| 01 | [Processes and Structures](https://drive.google.com/file/d/1K4GbS1Jq5locTK_enHpkyNXb5CCyhTeY/view?usp=drive_link) |  |  | [Purpose](https://docs.google.com/document/d/1-2PvbnWmMWllumHwUEPAdLX-N9y-nGDmuviRhoyr6iw/edit?usp=drive_link) |
+| 02 | [Marketing](https://drive.google.com/file/d/17dmt66baGmlnUHD_KUg9ENcOpH5aVuKs/view?usp=drive_link) | [Case Study: Market Research](https://docs.google.com/document/d/1xvqoezDOs64VYed1G0Nf-LD5PNmst1wpzYT__UByOe0/edit?usp=drive_link) | 20 | [Competition Mapping](https://docs.google.com/document/d/1L-jDIQlcwqGLX3CUl3VrnfjmBj5Z__x2mpc9xwVTZCc/edit?usp=drive_link) |
+| 03 | [Economics](https://drive.google.com/file/d/1VgFLto5Zogp_f3N6YeVBFam222b5MY4P/view?usp=drive_link) |  |  | [Pricing Model](https://docs.google.com/document/d/1jDoLs1DzH6U9xWHwEkz9kYt0KfJvUCTacenVy2YbuaU/edit?usp=drive_link) |
+| 04 | [Operations](https://drive.google.com/file/d/1FcLjUXSHDT7KdQ3KPeYNmlP7c8r2nUm4/view?usp=drive_link) |  |  | [Operating Manual](https://docs.google.com/document/d/19WfqnWFFQ-TwtbMsnbJP0LQjCJoxrEcmoR-JDDwLOnU/edit?usp=drive_link) |
+| 05 | [Implementation & Measurement](https://drive.google.com/file/d/1N0oRKcEP-dxvZZoHV20wvz9FE1AMWWUz/view?usp=drive_link) | [Case Study: Metrics](https://docs.google.com/document/d/1YujAICu1puteWAq7mhJIf1xzBlSPLlZdz_neb7uNf5E/edit?usp=drive_link) | 20 | [Metrics](https://docs.google.com/document/d/1PEUI7ugTt2n0fDe5InGp_8X0jXzbMygsOnldQ0izzoA/edit?usp=drive_link) |
+| 06 | [Growth](https://drive.google.com/file/d/1EzRSCsC2H3GtS9tPLFOSSXSg85J2bcpV/view?usp=drive_link) | [Case Study: Expansion](https://docs.google.com/document/d/1gZ5BXUSisT_yNdeiVMI5iUAY8rZ-u4WBA48NU66yVkM/edit?usp=drive_link) | 20 | [Growth and Expansion Plans](https://docs.google.com/document/d/1N1dpqdE3xO8Q2G0HiBijSaDjn6255FdYynvUgxUs2A8/edit?usp=drive_link) |
+| 07 | [Support Functions](https://drive.google.com/file/d/1hHKRFTz71ZHypW2d-Rr1MgQIvLlzRj9E/view?usp=drive_link) |  |  | [Organizational Structure](https://docs.google.com/document/d/1MyHv0CvRwvPRaRTDvCIRqQDvg8qPu5zI0nppgWQX0iI/edit?usp=drive_link) |
+| 08 | [Long Term Planning](https://drive.google.com/file/d/1pHbKgkbgvyWWMKtWqBU9P5MD9GsgMotf/view?usp=drive_link) | [Final Business Plan](https://docs.google.com/document/d/1dHRs8ZnenvZ0QhgY_EUFxBY5B7lxHAawjGG1K0ABIVA/edit?usp=drive_link) <br> [Course Reflection](https://docs.google.com/document/d/1Uh4xU3efD4khOK13iybkDikqkWQLJEM6hycf0UtYtSs/edit?usp=drive_link) | 30 <br> 10 | [Pitch Presentation](https://docs.google.com/document/d/1Wv6lQxpu-btTM8Vx6XmNnlSOYG24RTuwFMbCuqDajbE/edit?usp=drive_link) |
 {cols: 3.5rem 1fr 1.2fr 4rem 1.2fr}
 
 ## Grading
@@ -82,5 +79,3 @@ Structure
 | Business Plan | 30 | 30% |
 | Reflection | 10 | 10% |
 | **Total** | **100** | **100%** |
-
-There are no final exams for this course!

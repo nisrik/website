@@ -1,4 +1,4 @@
-/* Light / dark. Saved choice wins; otherwise follows the system. */
+/* Light / dark. Starts with the system setting; once the toggle is used, that choice is remembered on every page. */
 (function () {
   var root = document.documentElement;
   function current() {
@@ -9,6 +9,21 @@
     var dark = current() === "dark", t = dark ? "Switch to light mode" : "Switch to dark mode";
     btn.title = t; btn.setAttribute("aria-label", t);
   }
+  function saved() {
+    var t; try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") { var m = /nmbtheme=(light|dark)/.exec(window.name || ""); t = m && m[1]; }
+    return t === "light" || t === "dark" ? t : null;
+  }
+  /* keep every page and tab in step: back/forward cache restores, other tabs */
+  function sync() {
+    var t = saved(); if (!t || t === root.getAttribute("data-theme")) return;
+    root.setAttribute("data-theme", t);
+    var btn = document.getElementById("theme-toggle"); if (btn) label(btn);
+  }
+  window.addEventListener("pageshow", sync);
+  window.addEventListener("storage", sync);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) sync(); });
+
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.getElementById("theme-toggle");
     if (!btn) return;
@@ -18,22 +33,12 @@
       function apply() {
         root.setAttribute("data-theme", next);
         try { localStorage.setItem("theme", next); } catch (e) {}
+        /* fallback for browsers that give every local file its own storage (opening the files directly) */
+        try { window.name = (window.name || "").replace(/nmbtheme=\w+;?/, "") + "nmbtheme=" + next + ";"; } catch (e) {}
         label(btn);
       }
-      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (!document.startViewTransition) { apply(); return; }
-      if (reduce) { document.startViewTransition(apply); return; }   /* soft crossfade only */
-      /* the new theme opens as a circle from the toggle */
-      var r = btn.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
-      var rad = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-      root.classList.add("theming");
-      var vt = document.startViewTransition(apply);
-      vt.ready.then(function () {
-        root.animate(
-          { clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + rad + "px at " + x + "px " + y + "px)"] },
-          { duration: 750, easing: "cubic-bezier(.65,0,.25,1)", pseudoElement: "::view-transition-new(root)" });
-      });
-      vt.finished.finally(function () { root.classList.remove("theming"); });
+      /* soft crossfade, whatever the motion setting */
+      if (document.startViewTransition) document.startViewTransition(apply); else apply();
     });
   });
 })();

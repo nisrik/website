@@ -5,7 +5,7 @@ slug: braun-kf-20-coffee-maker
 ---
 The establishing shots of Ridley Scott's 1979 film, Alien feature a number of views of a futuristic space refinery. Both the inside and the outside of the ship are incredibly detailed, and well thought out. One of the shots is of a pantry area, which features 2 objects that don't look out of place in the futuristic setting, but weren't new, even for the late 70's : The Braun KF-20 Coffee Maker, and the Krups 223A Coffee grinder.
 
-![The pantry in Alien (1979), with the Braun KF-20 and the Krups grinder](images/essays/braun-kf-20-01.jpg)
+![The pantry in Alien (1979), with the Braun KF-20 and the Krups grinder](images/essays/braun-kf-20-01.jpg "Still from Alien, 20th Century Fox, 1979")
 
 We don't know if the space explorers of the future will even drink coffee, or if they'll prefer pumpkin spice lattes or flat whites, but rest assured, the Braun coffee maker wouldn't look dated in comparison to its futuristic environs.
 

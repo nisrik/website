@@ -1,11 +1,12 @@
 ---
+samples: https://drive.google.com/drive/folders/14Ets1MNYL6PpyNJHE90WD8AZr7YgFwQu
 title: Design Leadership
 term: Fall 2025
 codes: [HERV-601]
 school: [Indiana University Indianapolis, Herron School of Art and Design]
 cover: images/covers/HERV601-fa25-design-leadership.jpg
 cover_alt: A school of fish swirling in blue water
-pdf: syllabi/HERV601-fa25-design-leadership.pdf
+pdf: https://drive.google.com/file/d/10-nTTjwgIz72DCIsnU65A4s04G_cIBBd/view
 order: 1
 summary: Graduate seminar examining foundational and contemporary theories of leadership with a focus on design contexts. Covered attributes of effective design leaders, historical and evolving models of leadership, and critical reflections on leadership challenges in the 21st century.
 ---
@@ -24,9 +25,7 @@ This graduate seminar examines foundational and contemporary theories of leaders
 
 This course includes both synchronous and asynchronous components.
 
-The “Getting Started” module also includes an introduction to Zoom@IU, so please make sure to familiarize yourself, update your app etc. before the start of classes. We will meet virtually every Monday from 3pm to 5:30 pm Eastern Time.
-
-This course also uses the IU Canvas learning management system. If you have not previously used Canvas, please log into the course, click on Modules tab on the left, and go through the “Getting Started” Module. The course consists of 4 different activities:
+The course consists of 4 different activities:
 
 Readings
 : The primary readings for this course are chapters from the book Organizational Behavior by Bauer and Erdogan. These would be supplemented by articles, podcasts or papers that provide additional information, or design specific theories. All readings materials will be provided, and I will provide an overview of the readings for the week at the end of every lecture.
@@ -42,20 +41,18 @@ Case Studies
 
 ## Classes and Assignments
 
-Each week, we will be tackling one topic central to Design Leadership. Each week will have associated readings and lecture slides; and most weeks will have an assignment: either an essay or a case study. The readings and assignments may be updated before the class, so be sure to check the syllabus and modules each week.
-
-Assignments are due Sundays at Midnight, unless otherwise specified.
+Each week, we will be tackling one topic central to Design Leadership. Each week will have associated readings and lecture slides; and most weeks will have an assignment: either an essay or a case study.
 
 | Week | Topic | Assignment | Grade |
 |---|---|---|---|
-| 01 | Introduction | Self Reflection | 5 |
-| 02 | People | Case Study: Motivation | 20 |
-| 03 | Power | Essay: Design and a Seat at the Table | 15 |
-| 04 | Politics | Essay: Changing Definitions of Design | 15 |
-| 05 | Groups, Teams and Conflicts | Case Study: Conflict | 20 |
-| 06 | Decision Making |  |  |
-| 07 | Structure and Change Management | Case Study: Change Management | 20 |
-| 08 | Culture | Course Reflection | 5 |
+| 01 | [Introduction](https://drive.google.com/file/d/12DN46LlaQUsWY4BxWFMwP_5IZRq2J2kR/view?usp=drive_link) | [Self Reflection](https://docs.google.com/document/d/1dFUePu3PYWt3DeO4YEwzUVOLR8pDMnS-_g7rcthS3Ns/edit?usp=drive_link) | 5 |
+| 02 | [People](https://drive.google.com/file/d/1_lDdFsZC6Hnh2ci7jBIaxf76zGC67k_I/view?usp=drive_link) | [Case Study: Motivation](https://docs.google.com/document/d/11EW_DHaunTuGSs9d38DH9YazlD37EJHO_wYkc43sNRc/edit?usp=drive_link) | 20 |
+| 03 | [Power](https://drive.google.com/file/d/1uMocxaHxGaXKMIsvhpSaWwojhbTHq2QL/view?usp=drive_link) | [Essay: Design and a Seat at the Table](https://docs.google.com/document/d/1r_kak_QJSUa0W3P4wyIJTTrzmiLcvGzuTWiRrzXL8k4/edit?usp=drive_link) | 15 |
+| 04 | [Politics](https://drive.google.com/file/d/1rODYwEJZLe88Qms6BJwi0jZ5e0wZ1eiO/view?usp=drive_link) | [Essay: Changing Definitions of Design](https://docs.google.com/document/d/1Y9HNOEw1pa6_LLrBMa5NtnyWabyUz_8jEq1FcWYkRho/edit?usp=drive_link) | 15 |
+| 05 | [Groups, Teams and Conflicts](https://drive.google.com/file/d/1AYlc2YgfnNdY_ahA89segzgl_8pcdWVo/view?usp=drive_link) | [Case Study: Conflict](https://docs.google.com/document/d/1hpoHwZilTqGAv9jKA6-bM_Hr0ZzlT9hC5DUJQIbcoBE/edit?usp=drive_link) | 20 |
+| 06 | [Decision Making](https://drive.google.com/file/d/1s1Ft_QkjclsAZJWcpC1kjTP0SpNE-ueU/view?usp=drive_link) |  |  |
+| 07 | [Structure and Change Management](https://drive.google.com/file/d/1DD7Acl8OtPP9KJlj7X-ZyzfEskNze_ET/view?usp=drive_link) | [Case Study: Change Management](https://docs.google.com/document/d/1wz5V5o8I4YqM1lnG2ZBgQ-LCxulyCTK6EuJblxu6ldQ/edit?usp=drive_link) | 20 |
+| 08 | [Culture](https://drive.google.com/file/d/1a4c63Q3OcZFXlbWwKVPnp5IS1g1cutcj/view?usp=drive_link) | [Course Reflection](https://docs.google.com/document/d/14-ZCokVWczKNPjejoVMa3_KuynYN3HiWpYAFqs47KC4/edit?usp=drive_link) | 5 |
 {cols: 3.5rem 1fr 1.4fr 5rem}
 
 ## Grading
@@ -82,5 +79,3 @@ Structure
 | Essays | 15 x 2 | 30% |
 | Reflections | 5 x 2 | 10% |
 | **Total** | **100** | **100%** |
-
-There are no final exams for this course!

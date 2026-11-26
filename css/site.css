@@ -5,15 +5,26 @@
   --pad: 3.385vw;           /* 130px at 3840 */
   --gutter: 1.302vw;        /* 50px at 3840: six equal columns, 555px each */
   --gap: 11px;
-  --bg: #fff;
-  --fg: #000;
-  --grey: hsl(0, 0%, 51%);
-  --rule: hsl(0, 0%, 70%);
+  /* Palette: Primer Black, Bleached Linen, Primer Grey, Grey */
+  --primer-black: #1a1a1a;
+  --linen: #faf9f6;
+  --primer-grey: #666666;
+  --champagne: #bb9753;      /* Champagne Gold, on dark */
+  --brass: #946500;
+  --sel-text: var(--champagne);   /* selection is the inverse of the page; gold text chosen to contrast with it */
+  --accent: var(--brass);         /* Dark Brass on light; Champagne Gold on dark: link hover, text selection */
+  --grey-light: #a8a8a8;
+  --bg: var(--linen);
+  --fg: var(--primer-black);
+  --grey: #858585;
+  --rule: var(--grey-light);
+  --rule-soft: color-mix(in srgb, var(--rule) 50%, var(--bg));   /* lists and tables where many lines sit close together */
   --hh: calc(4vw + 45px);           /* header height */
+  --foot-bg: var(--primer-black); --foot-fg: var(--linen);
 }
-:root[data-theme="dark"] { --bg: #000; --fg: #fff; --grey: hsl(0, 0%, 60%); --rule: hsl(0, 0%, 38%); }
+:root[data-theme="dark"] { --foot-bg: #0f0f0f; --bg: var(--primer-black); --fg: var(--linen); --grey: var(--grey-light); --rule: var(--primer-grey); --accent: var(--champagne); --sel-text: var(--brass); }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --bg: #000; --fg: #fff; --grey: hsl(0, 0%, 60%); --rule: hsl(0, 0%, 38%); }
+  :root:not([data-theme="light"]) { --foot-bg: #0f0f0f; --bg: var(--primer-black); --fg: var(--linen); --grey: var(--grey-light); --rule: var(--primer-grey); --accent: var(--champagne); --sel-text: var(--brass); }
 }
 @media (min-width: 768px) and (max-width: 799px) { :root { --hh: calc(12vw + 45px); } }
 @media (max-width: 767px) { :root { --gutter: 4vw; --pad: 6vw; --hh: calc(12vw + 37px); } }
@@ -22,7 +33,7 @@
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--fg);
-  font-family: var(--font); font-weight: 300; font-size: 1rem; line-height: 1.6em;
+  font-family: var(--font); font-weight: var(--weight); font-size: 1rem; line-height: 1.6em;
   overflow-x: hidden;
 }
 a { color: inherit; }
@@ -40,7 +51,7 @@ a { color: inherit; }
 .hdr.hide { transform: translateY(calc(-100% - 10px)); }
 .hdr-in { display: flex; align-items: center; justify-content: space-between; padding: 2vw var(--pad); min-height: var(--hh); }
 .logo { display: block; }
-.logo img { display: block; width: auto; max-height: 45px; filter: invert(1); }   /* white artwork, inverted to black on light */
+.logo img { display: block; width: auto; max-height: 45px; filter: invert(.9); }   /* white artwork, inverted to Primer Black on light */
 :root[data-theme="dark"] .logo img { filter: none; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo img { filter: none; } }
 .nav { display: inline-flex; }
@@ -49,7 +60,9 @@ a { color: inherit; }
 .nav a::after { content: ""; position: absolute; left: 0; bottom: .1em; width: 100%; height: 1px; background: currentColor;
                 transform: scaleX(0); transform-origin: left; transition: transform .3s ease; }
 @media (hover: hover) { .nav a:hover::after { transform: scaleX(1); } }
-.nav a[aria-current] { background: linear-gradient(currentColor, currentColor) 0 100% / 1px 1px repeat-x; }
+.nav a[aria-current]::after { transform: scaleX(1); }
+@keyframes nav-redraw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (hover: hover) { .nav a[aria-current]:hover::after { animation: nav-redraw .3s ease; } }
 .burger { display: none; position: relative; width: 35px; height: 35px; margin-right: -3px; padding: 0; border: 0; background: none; cursor: pointer; color: inherit; }
 .burger span { position: absolute; left: 3.5px; top: 17px; width: 28px; height: 1px; background: currentColor; transition: transform .3s ease; }
 .burger span + span { transform: rotate(90deg); }
@@ -59,7 +72,7 @@ body.menu-open .burger span + span { transform: rotate(-45deg); }
         opacity: 0; transition: opacity .3s ease; display: flex; align-items: center; }
 .menu.on { opacity: 1; }
 .menu[hidden] { display: none; }
-.menu nav { display: flex; flex-direction: column; gap: .4em; font-size: 1.2rem; }
+.menu nav { display: flex; flex-direction: column; gap: .15em; font-size: clamp(2.6rem, 13vw, 4.5rem); line-height: 1.15; }
 .menu a { text-decoration: none; }
 .menu a[aria-current] { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
 body.menu-open { overflow: hidden; }
@@ -68,15 +81,15 @@ body.menu-open { overflow: hidden; }
 
 /* ---------- light / dark toggle ---------- */
 .theme-toggle {
-  position: fixed; bottom: 28px; right: calc(var(--pad) - 8px); z-index: 50;
+  position: fixed; bottom: 28px; right: calc((var(--pad) - 22px) / 2 - 8px); z-index: 50;   /* centred in the right margin */
   background: none; border: 0; cursor: pointer; padding: 8px; line-height: 0;
-  color: #fff; mix-blend-mode: difference; opacity: .4; transition: opacity .2s;
+  color: var(--accent); opacity: .9; transition: opacity .2s;
 }
-.theme-toggle:hover, .theme-toggle:focus-visible { opacity: .85; }
+.theme-toggle:hover, .theme-toggle:focus-visible { opacity: 1; }
+@media (max-width: 767px) { .theme-toggle { right: calc((var(--pad) - 16px) / 2 - 8px); } .theme-toggle svg { width: 16px; height: 16px; } }
 .theme-toggle svg { display: block; transition: transform .3s; }
 :root[data-theme="dark"] .theme-toggle svg { transform: scaleX(-1); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme-toggle svg { transform: scaleX(-1); } }
-body.menu-open .theme-toggle { mix-blend-mode: normal; color: var(--fg); }
 
 /* ---------- Fluid Engine grid ---------- */
 .sec { background: var(--bg); color: var(--fg); min-height: 33vh; }
@@ -100,7 +113,7 @@ main > .sec:first-child { padding-top: var(--hh); }
 .b > * { margin-top: 0; }
 
 /* text: Squarespace's three sizes, scaled from the viewport */
-.b h2, .b p { margin: 1rem 0; font-weight: 300; line-height: 1.6em; white-space: pre-wrap; }
+.b h2, .b p { margin: 1rem 0; line-height: 1.6em; white-space: pre-wrap; }
 .b > :first-child { margin-top: 0; }
 .b > :last-child { margin-bottom: 0; }
 .b h2 { font-size: min(calc(1.6 * 1.2vw + 1rem), max(calc(1.6 * .012 * var(--maxw) + 1rem), 2.6rem));
@@ -119,10 +132,12 @@ main > .sec:first-child { padding-top: var(--hh); }
 .b hr { border: 0; height: 1px; margin: .5rem 0 !important; background: var(--fg); }
 
 /* ---------- footer (inverse of the page) ---------- */
-.foot { background: var(--fg); color: var(--bg); }
-.foot .sec { background: var(--fg); color: var(--bg); min-height: 20vh; display: flex; align-items: center; }
-.foot .sec > .grid { padding: 2vmax 0; width: 100%; }
-.foot a { color: var(--bg); }
+.foot { background: var(--foot-bg); color: var(--foot-fg); }
+.foot .sec { background: var(--foot-bg); color: var(--foot-fg); min-height: 0; display: flex; align-items: center; }
+.foot .sec > .grid { padding: 1.6rem 0 1.8rem; width: 100%; }
+.foot .b p { margin: 0; }
+.foot .b p + p { margin-top: .6em; }
+.foot a { color: var(--foot-fg); }
 
 /* footer block placement (shared by every page) */
 .f0{--mr:2;--dr:2}
@@ -137,19 +152,19 @@ html.js .hdr:not(.scrolled)::after { opacity: 0; }
 
 /* links: underline is a drawn line; hover redraws it. Arrow appears on hover (→ inside the site, ↗ outside). */
 :root { --uy: calc(100% - .02em); }
-.b a, .c-body p a, .c-body dd a, .c-pdf a {
+.b a, .c-body p a, .c-body dd a, .c-pdf a, .c-samples h2 a {
   white-space: normal; text-decoration: none;
   background: linear-gradient(currentColor, currentColor) 0 var(--uy) / 100% 1px no-repeat;
 }
-a[data-link]::after {
+a[data-link]::after, .stop[data-link]::after {
   display: inline-block; width: 0; overflow: visible; white-space: nowrap; opacity: 0; margin-left: 0; transform: translateX(-.3em);
   transition: width .3s ease, margin-left .3s ease, opacity .3s ease, transform .3s ease;
 }
-a[data-link="int"]::after { content: "\2192"; line-height: 0; vertical-align: .08em; }
-a[data-link="ext"]::after { content: "\2197"; font-size: 1.45em; line-height: 0; vertical-align: .14em; }
-a[data-link="dl"]::after { content: "\2193"; line-height: 0; vertical-align: .1em; }
-a[data-link]:focus-visible::after { width: 1em; margin-left: .3em; opacity: 1; transform: none; }
-@media (hover: hover) { a[data-link]:hover::after { width: 1em; margin-left: .3em; opacity: 1; transform: none; } }
+a[data-link="int"]::after, .stop[data-link="int"]::after { content: "\2192"; line-height: 0; vertical-align: .08em; }
+a[data-link="ext"]::after, .stop[data-link="ext"]::after { content: "\2197"; font-size: 1.45em; line-height: 0; vertical-align: .14em; }
+a[data-link="dl"]::after, .stop[data-link="dl"]::after { content: "\2193"; line-height: 0; vertical-align: .1em; }
+a[data-link]:focus-visible::after, a:focus-visible + .stop[data-link]::after { width: 1em; margin-left: .3em; opacity: 1; transform: none; }
+@media (hover: hover) { a[data-link]:hover::after, a:hover + .stop[data-link]::after { width: 1em; margin-left: .3em; opacity: 1; transform: none; } }
 @keyframes redraw {
   0%   { background-size: 0 1px;    background-position: 0 var(--uy); }
   100% { background-size: 100% 1px; background-position: 0 var(--uy); }
@@ -159,13 +174,47 @@ a[data-link]:focus-visible::after { width: 1em; margin-left: .3em; opacity: 1; t
 }
 
 /* theme change: a circle opens from the toggle (see js/theme.js) */
-html.theming::view-transition-old(root), html.theming::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
-html.theming::view-transition-old(root) { z-index: 1; }
-html.theming::view-transition-new(root) { z-index: 2; }
-html.theming body { transition: none; }
 
 /* page change: soft crossfade; the clicked course title becomes the course page title */
 @view-transition { navigation: auto; }
 ::view-transition-group(root) { animation-duration: .35s; }
 ::view-transition-group(course-title) { animation-duration: .7s; animation-timing-function: cubic-bezier(.2, .75, .2, 1); }
 @media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }   /* page slide/morph off; theme change stays a soft crossfade */
+
+/* arrow follows the full stop when a link ends a sentence */
+a[data-stop]::after { display: none; }
+
+/* arrows that would wrap the line when they open get "noshift": drawn over the gap, no reflow (set by motion.js) */
+.probe::after { width: 1em !important; margin-left: .3em !important; opacity: 1 !important; transform: none !important; transition: none !important; }
+@media (hover: hover) {
+  a[data-link][data-noshift]:hover::after, a:hover + .stop[data-link][data-noshift]::after { width: 0; margin-left: 0; transform: translateX(.3em); opacity: 1; }
+}
+a[data-link][data-noshift]:focus-visible::after, a:focus-visible + .stop[data-link][data-noshift]::after { width: 0; margin-left: 0; transform: translateX(.3em); opacity: 1; }
+
+/* one weight everywhere (set --weight in fonts.css); nothing is ever bold */
+html, *, *::before, *::after { font-weight: var(--weight); }
+*, *::before, *::after { font-weight: inherit; }
+html { font-weight: var(--weight); }
+
+/* links: gold on hover and focus (Dark Brass on light, Champagne on dark) */
+.b a, .c-body p a, .c-body dd a, .c-pdf a, .c-samples h2 a, .tbl a, .c-sub a, .link-list a, .nav a { transition: color .25s ease; }
+@media (hover: hover) {
+  .b a:hover, .c-body p a:hover, .c-body dd a:hover, .c-pdf a:hover, .c-samples h2 a:hover, .tbl a:hover, .c-sub a:hover, .link-list a:hover, .nav a:hover { color: var(--accent); }
+  .foot a:hover, .hero a:hover, html.js body.home .hdr:not(.scrolled) .nav a:hover { color: var(--champagne); }
+}
+a:focus-visible { color: var(--accent); }
+.foot a:focus-visible, .hero a:focus-visible { color: var(--champagne); }
+
+/* current page: gold (brass on light, champagne on dark; champagne over the hero) */
+.nav a[aria-current], .menu a[aria-current] { color: var(--accent); }
+html.js body.home .hdr:not(.scrolled) .nav a[aria-current] { color: var(--champagne); }
+
+/* site logo: gold on hover (brass on light, champagne on dark and over the hero) */
+.logo { position: relative; }
+.logo .g { position: absolute; left: 0; top: 0; opacity: 0; filter: none; transition: opacity .25s ease; pointer-events: none; }
+.logo .g-champ { display: none; }
+:root[data-theme="dark"] .logo .g-brass, html.js body.home .hdr:not(.scrolled) .logo .g-brass { display: none; }
+:root[data-theme="dark"] .logo .g-champ, html.js body.home .hdr:not(.scrolled) .logo .g-champ { display: block; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo .g-brass { display: none; } :root:not([data-theme="light"]) .logo .g-champ { display: block; } }
+@media (hover: hover) { .logo:hover .g { opacity: 1; } }
+.logo:focus-visible .g { opacity: 1; }

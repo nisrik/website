@@ -14,7 +14,19 @@
      font-weight: 300; font-style: normal; font-display: swap;
    }
 */
+/* trying the Trade Gothic LT Std file supplied (Regular only; desktop licence: check web rights before launch) */
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("../fonts/TradeGothicLTStd.otf") format("opentype");
+  font-weight: 400 900; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("../fonts/TradeGothicLTStd-Light.otf") format("opentype");
+  font-weight: 100 399; font-style: normal; font-display: swap;
+}
 :root {
+  --weight: 300;   /* the one weight used everywhere: change it here when Trade Gothic is swapped in */
   --font: "Trade Gothic", "Trade Gothic LT Std", "Trade Gothic Next", "trade-gothic-next",
           "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

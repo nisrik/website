@@ -94,15 +94,21 @@ Conference name and year.
 ```
 Each line of the text is a line in grey under the title. `group:` must match a group name (they appear in the order listed in `groups:` in that folder's `_section.md`; an unknown name just starts a new group at the end). Optional `style: compact` (title and grey text together, as for Presentations) or `style: inline` (as for Case Studies: `title: Motivation:` plus text).
 
+### The etc. page: `content/etc.md` + folders with `page: etc`
+`content/etc.md` is the page title (and an optional intro). A folder joins the etc. page when its `_section.md` says `page: etc`. Three kinds:
+- `kind: rows` (Fiction): one file per story, exactly like essays (`title`, `date`, `url:` or a body that becomes its own page).
+- `kind: works` (Art): one file per work. Front matter `title`, `year`, `medium`, optional `note`; the text below is the description; each `![alt](images/etc/file.jpg)` line is a picture (an odd number of pictures makes the first one full width).
+- `kind: blocks` (Music, Photography): the text in `_section.md` itself is the content: paragraphs on the left, picture(s) on the right.
+
 ### Section text and order: `content/<section>/_section.md`
-Front matter: `title`, `order` (position on the page), `kind` (`groups`, `terms` for Teaching, or `rows` for Essays), `groups: [A, B, C]`. The text below is the paragraph under the section heading. The page's own title and intro is `content/inquiry.md`.
+Front matter: `title`, `order` (position on the page), `page` (`inquiry` by default, or `etc`), `kind` (`groups`, `terms` for Teaching, or `rows` for Essays), `groups: [A, B, C]`. The text below is the paragraph under the section heading. The page's own title and intro is `content/inquiry.md`.
 
 ## Previewing
 ```
 python3 build/build.py
 python3 -m http.server      # then open http://localhost:8000
 ```
-(Opening `index.html` directly also works.) The generated `index.html`, `essays/` and `teaching/` are rebuilt every time; **don't edit them by hand**, edit the markdown.
+(Opening `index.html` directly also works.) The generated `index.html`, `etc.html`, `essays/`, `teaching/` and any other generated folders are rebuilt every time; **don't edit them by hand**, edit the markdown.
 
 ## Publishing (GitHub Pages)
 One-time: repo **Settings → Pages → Source: GitHub Actions**. After that, every push to `main` runs `.github/workflows/pages.yml`, which runs the build and publishes. You never need to commit the generated HTML, though it is harmless if you do.
@@ -118,3 +124,22 @@ One-time: repo **Settings → Pages → Source: GitHub Actions**. After that, ev
 2. **Old PDF links.** Links like `nonemoreblue.com/s/…pdf` (CV, FA24 syllabi) stop working when Squarespace is cancelled; download them into the repo and update the links (in `content/teaching/` and `build/partials/footer.html`).
 3. **Syllabus typos** carried over from the PDFs: Framing week 7 assignment, "methods of to prototyping", "if you would like and feedback".
 4. **Cover images** may be third-party artwork; confirm you can publish them.
+
+## Home page
+
+`content/home.md` drives `index.html`: front matter for the video, poster, and the Currently / Previously lines; the `#` heading is the headline and the paragraphs below it are the two columns. The Inquiry page is now `inquiry.html`. To swap the video, replace `videos/title-sequence.mp4` (about 1280px wide, no audio, under 3MB).
+
+To add a "Student Work Samples" link to a course, add `samples: <folder url>` to its front matter.
+
+A course's `pdf:` can be a local file (`syllabi/x.pdf`, shows a ↓) or a Drive link (opens in a new tab, shows a ↗).
+
+Every course should have a one or two sentence `summary:` on its most recent term (older terms of the same course can leave it out). When a course gets its own page, move the blurb into `summary:` in its front matter.
+
+### Image credits in essays
+Add a credit under an essay image with a quoted title: `![Caption](images/essays/x.jpg "Credit line")`. The credit shows under the caption in a lighter tone. Avoid parentheses inside the credit.
+
+### Palette
+Colours are tokens at the top of `css/site.css`: Primer Black `#1a1a1a`, Bleached Linen `#faf9f6`, Primer Grey `#666666`, Grey `#a8a8a8`. Light mode is Primer Black on Linen; dark mode swaps them. The dark footer is a slightly deeper `#0f0f0f` so it still reads as a footer.
+- Logos page: content/logos.md + build_logos() -> logos.html; marks are CSS masks in images/logos/
+- Output page: content/output.md (intro, group order) + content/output/NN-slug.md (title, year, client, group, url, optional image/alt) -> output.html. Entries link to Squarespace until their pages are built here; no image = blank.
+- Trade Gothic LT Std (Regular and Light, desktop licence) is loaded from fonts/TradeGothicLTStd*.otf via css/fonts.css for testing only: do not publish the file without a web licence.

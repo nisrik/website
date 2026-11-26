@@ -1,11 +1,12 @@
 ---
+samples: https://drive.google.com/drive/folders/1z6FF6bAANVIXfmbsFeWXuRv15MOugW4M
 title: Design Methods for Ideating
 term: Spring 2025
 codes: [HERV-522, HERV-408]
 school: [Indiana University Indianapolis, Herron School of Art and Design]
 cover: images/covers/HERV522-sp25-design-methods-ideating.jpg
 cover_alt: A figure in a white shirt holding white flowers where the head would be, against a teal wall
-pdf: syllabi/HERV522-sp25-design-methods-ideating.pdf
+pdf: https://drive.google.com/file/d/1N34nhbB94HanaglorQ5bCROgpaPHKSpe/view?usp=drive_link
 order: 1
 ---
 ## About this Course
@@ -25,7 +26,7 @@ Through a combination of readings, assignments and discussions, students will en
 
 ## Course Mode
 
-This course is completely online, asynchronous, and uses the IU Canvas learning management system. The course has three different types of activities:
+This course is completely online and asynchronous. The course has three different types of activities:
 
 Digest
 : Read, watch and ponder the posted course materials. The readings shared will range from blog posts or podcasts, to academic papers.
@@ -53,14 +54,14 @@ For the first half of the course you will explore different approaches to ideati
 
 | Week | Topic | Assignment | Grade |
 |---|---|---|---|
-| 01 | Ideation in the Design Process | Select a Problem Space | Assignment: 40 <br> Reflection: 10 <br> Discussion: 10 |
-| 02 | Ideating through Culture | Study trends in the industry and create a trend map | Assignment: 40 <br> Reflection: 10 <br> Discussion: 10 |
-| 03 | Ideating through Processes | Create a series of Mindmaps to generate ideas | Assignment: 40 <br> Reflection: 10 <br> Discussion: 10 |
-| 04 | Ideating through Framing | Use alternative points of view to re-frame your problem and generate ideas | Assignment: 40 <br> Reflection: 10 <br> Discussion: 10 |
-| 05 | Ideating through Frameworks | Use a Creative Problem Solving Framework to generate ideas | Assignment: 40 <br> Reflection: 10 <br> Discussion: 10 |
-| 06 | Ideating with Non-Humans | Generative AI-Deation | Assignment: 40 <br> Reflection: 10 <br> Discussion: 10 |
-| 07 | Ideating with People | Organize a group Brainstorming / Ideation Session | Assignment: 40 <br> Reflection: 10 <br> Discussion: 10 |
-| 08 | Reflecting on the Methods of Ideation | Submit your Notebooks, and reflect on the ideas you’ve come up with and the methods you’ve learned / used. | Assignment: 50 <br> Reflection: 20 <br> Discussion: 10 |
+| 01 | [Ideation in the Design Process](https://docs.google.com/document/d/14gbxjuIgbzTZmJEIadVgODRTRprqg7j2-kfD6YMPCE0/edit?usp=drive_link) | [Select a Problem Space](https://docs.google.com/document/d/1rE_CQ1gbx--snnWxE_huiEQ1t6C5HYGkRG8yFhwbk9M/edit?usp=drive_link) | Assignment: 40 <br> [Reflection: 10](https://docs.google.com/document/d/1ie3vZX_GulbI4GERETI5KeYq7ZycIJTPlmxZWKFlWXY/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/1ie3vZX_GulbI4GERETI5KeYq7ZycIJTPlmxZWKFlWXY/edit?usp=drive_link) |
+| 02 | [Ideating through Culture](https://docs.google.com/document/d/1e_eaRMLKucKLxOAInfVVmKv1QjjAL1bRKjqkB3xaahY/edit?usp=drive_link) | [Study trends in the industry and create a trend map](https://docs.google.com/document/d/1tmReRDLdkyFrA0fcoEC0Y-IVdf4YX6__5Myg6VoxLz4/edit?usp=drive_link) | Assignment: 40 <br> [Reflection: 10](https://docs.google.com/document/d/1Tfu05xpWRFZ8MG7jwlzEu5VF8oK6fHWwelmBmFmCoKY/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/1Tfu05xpWRFZ8MG7jwlzEu5VF8oK6fHWwelmBmFmCoKY/edit?usp=drive_link) |
+| 03 | [Ideating through Processes](https://docs.google.com/document/d/1C-0fcAShx1hyAug5kyxGOy3LcrSntJ6ohBUVI0aW7XI/edit?usp=drive_link) | [Create a series of Mindmaps to generate ideas](https://docs.google.com/document/d/1vidsj-E_IC7U00nG0iSk-orQ_5Os14i1A9FNe9mr-zA/edit?usp=drive_link) | Assignment: 40 <br> [Reflection: 10](https://docs.google.com/document/d/1kw9GVeAc_QRN0lqQ-Rjr9Gk0EIEk0NEenpyQPK8DOgk/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/1kw9GVeAc_QRN0lqQ-Rjr9Gk0EIEk0NEenpyQPK8DOgk/edit?usp=drive_link) |
+| 04 | [Ideating through Framing](https://docs.google.com/document/d/1g31lOvlv4Jn5KElF-FS7x-41PkAcSajgR53CY531baA/edit?usp=drive_link) | [Use alternative points of view to re-frame your problem and generate ideas](https://docs.google.com/document/d/1XEDXJXo2lj79SCFDC3k8w8PmCydnuCoS6HbCqdepyOw/edit?usp=drive_link) | Assignment: 40 <br> [Reflection: 10](https://docs.google.com/document/d/1RaaO2aAM6-T_DzWbbhVfOrVPyEN3YOrHFp1VapGSki4/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/1RaaO2aAM6-T_DzWbbhVfOrVPyEN3YOrHFp1VapGSki4/edit?usp=drive_link) |
+| 05 | [Ideating through Frameworks](https://docs.google.com/document/d/1fHOM3eei14fGh8klSjD6g7-gBXjNoSUmr11ZY0GhTBk/edit?usp=drive_link) | [Use a Creative Problem Solving Framework to generate ideas](https://docs.google.com/document/d/1Mk12hc106Xk-P_81EZ3RL6q-NR3OSnkIMwKOzYVw2Hk/edit?usp=drive_link) | Assignment: 40 <br> [Reflection: 10](https://docs.google.com/document/d/14So0gTptiYM061iBlr7GIITvdgFVZb89qWAsCxeRgmQ/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/14So0gTptiYM061iBlr7GIITvdgFVZb89qWAsCxeRgmQ/edit?usp=drive_link) |
+| 06 | [Ideating with Non-Humans](https://docs.google.com/document/d/1VkjPzEW8CLrRxHq8vVkmrOL_w27AvoU4NVcko2J0yWk/edit?usp=drive_link) | [Generative AI-Deation](https://docs.google.com/document/d/1AbfnIGRHMU1UIwxX9ksKbHzo_ERrc1rz_mh6iMTmdpc/edit?usp=drive_link) | Assignment: 40 <br> [Reflection: 10](https://docs.google.com/document/d/148_azaU-S_uv6Xz9qI7BVmijcXjwYPbmtaP3MFqkOts/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/148_azaU-S_uv6Xz9qI7BVmijcXjwYPbmtaP3MFqkOts/edit?usp=drive_link) |
+| 07 | [Ideating with People](https://docs.google.com/document/d/15PoNq4r2x0M57j7oQhyYTKDjbuzShbKNjRwNCmAZaqU/edit?usp=drive_link) | [Organize a group Brainstorming / Ideation Session](https://docs.google.com/document/d/1eQJuAfXYKs7qCuZr7wbCfjx_P8--Jmcr3XmngiE8pSg/edit?usp=drive_link) | Assignment: 40 <br> [Reflection: 10](https://docs.google.com/document/d/1iBWPFOEkD65jsCCe4V96MHEt1Eev9c_man1Nr8ohuJQ/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/1iBWPFOEkD65jsCCe4V96MHEt1Eev9c_man1Nr8ohuJQ/edit?usp=drive_link) |
+| 08 | Reflecting on the Methods of Ideation | [Submit your Notebooks, and reflect on the ideas you’ve come up with and the methods you’ve learned / used.](https://docs.google.com/document/d/1oJ8Fch6t8yah8vx-eiMm4w-FoyhZMeUw0reDtoJNUJU/edit?usp=drive_link) | Assignment: 50 <br> [Reflection: 20](https://docs.google.com/document/d/1n1ba9bM2ZFCBQyYZ4iUK0fgGS3Yu9fSIcnmswuBWyF4/edit?usp=drive_link) <br> [Discussion: 10](https://docs.google.com/document/d/1n1ba9bM2ZFCBQyYZ4iUK0fgGS3Yu9fSIcnmswuBWyF4/edit?usp=drive_link) |
 {cols: 3.5rem 1fr 1.3fr 1fr}
 
 ### Putting it in Practice
@@ -69,14 +70,14 @@ For the second half of the course you’ll be applying what you’ve learned to 
 
 | Week | Topic | Assignment | Grade |
 |---|---|---|---|
-| 09 | Research Plan | Create a comprehensive research plan | Assignment: 60 |
-| 10 | Ideation in Practice | Ideation in Practice | Assignment: 60 |
-| 11 | From Ideas to Concepts | Ideation in Practice | Assignment: 60 |
-| 12 | Testing Concepts | Testing your Concepts with Users | Assignment: 60 |
-| 13 | Evaluating Concepts | Evaluating your Concepts | Assignment: 60 |
-| 14 | From Concepts to Designs | Converting your research into Design Requirements | Assignment: 60 |
-| 15 | Presenting Design Requirements | Presenting Design Requirements to Stakeholders | Assignment: 60 |
-| 16 | Reflecting on the Ideation Process | Submit your Notebooks, and reflect on the use of ideation methods in the design process | Reflection: 60 <br> Team Evaluation: 20 |
+| 09 | [Research Plan](https://docs.google.com/document/d/1sBskhspMriqSaOrY_ShIdzzZO_MHfi2efQyI5EJaab0/edit?usp=drive_link) | [Create a comprehensive research plan](https://docs.google.com/document/d/1uIrZy8O647HXrwaHMc2leX6lxWyz-GKiG4PWQQggZnc/edit?usp=drive_link) | Assignment: 60 |
+| 10 | Ideation in Practice | [Ideation in Practice](https://docs.google.com/document/d/1klC7Is-yTk1dYrpG8Hr_WRnR5jRBHDeekzYmhCvG0ls/edit?usp=drive_link) | Assignment: 60 |
+| 11 | From Ideas to Concepts | [Ideation in Practice](https://docs.google.com/document/d/1wyRk734anHOzImcCC6tOcHKtYjl0uWfCAmMtLy1fL4A/edit?usp=drive_link) | Assignment: 60 |
+| 12 | Testing Concepts | [Testing your Concepts with Users](https://docs.google.com/document/d/1YBgRYPVlTVMm8j_qlEnjqIjm5T8zzc3B27xLttGceLQ/edit?usp=drive_link) | Assignment: 60 |
+| 13 | Evaluating Concepts | [Evaluating your Concepts](https://docs.google.com/document/d/17gv4uiwzWkDWi1Nwf9ddz0rBmHRAX5kg7MgmswrMfgM/edit?usp=drive_link) | Assignment: 60 |
+| 14 | From Concepts to Designs | [Converting your research into Design Requirements](https://docs.google.com/document/d/1AZKFGzMujBXg7EqIqcT2tlugPl6_2fcYwj2RosHl6p4/edit?usp=drive_link) | Assignment: 60 |
+| 15 | Presenting Design Requirements | [Presenting Design Requirements to Stakeholders](https://docs.google.com/document/d/1J7qcP7hwPHqpKGT84VybGgxJg2PmEbWABG1TiROIy5M/edit?usp=drive_link) | Assignment: 60 |
+| 16 | Reflecting on the Ideation Process | [Submit your Notebooks, and reflect on the use of ideation methods in the design process](https://docs.google.com/document/d/1aLQd1kO77wwm8c_5iZwFfs4A5268E_8J1QR17KaGRIE/edit?usp=drive_link) | Reflection: 60 <br> [Team Evaluation: 20](https://docs.google.com/document/d/1Eli-NHoxhaXW9CZil2yx_6esFak_Gb0IIpYYUD7v-3M/edit?usp=drive_link) |
 {cols: 3.5rem 1fr 1.3fr 1fr}
 
 ## Expectations for Course Work
@@ -104,5 +105,3 @@ Submission formats
 | Reflections | 150 | 15% |
 | Discussions | 80 | 8% |
 | **Total** | **1000** | **100%** |
-
-There are no final exams for this course!

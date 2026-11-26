@@ -3,6 +3,8 @@ title: Cultural Affordances: Social Structures
 date: 2023-04-16
 slug: social-structures
 ---
+![Cultural Affordances: Social Structures](images/essays/cultural-affordances-social-structures.jpg)
+
 Many aspects of social norms and social structures have previously shaped objects and environments. For example, in eastern cultures, chairs were often the reserve of royalty, with most people sitting on the floor. This chairs themselves quickly evolved into ornate thrones that showed the wealth of the owner. Similarly, office design often dedicates the "corner office" to higher ranked staff members. And in a throwback to the thrones of the past, the highbacked "executive" chairs are reserved for those that have earned it. These symbols denote status and social hierarchy, which then become objectives to strive for. This reminds me of Latour's Actor-Network Theory, in how we are as influenced by objects as we are by people. (In ID's campus as well, there are physical structures that denote professional hierarchies: adjunct faculty don't have access to desks, administrative staff sit in an office separate from faculty etc.)
 
 The paper "Social Structures as Service Design Materials" seeks to translate this knowledge of the influence of social structures on design into a practical framework for attending to these social structures in service design practice.  While the framework itself seems like it would translate well across different regions, the experiments conducted by the authors were primarily focused on western countries. I wonder if the framework would have been different if the experiments had included a range of different countries from different regions, i.e., Africa, Asia, and Latin America.

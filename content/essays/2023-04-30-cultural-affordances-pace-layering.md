@@ -3,6 +3,8 @@ title: Cultural Affordances: Pace Layering
 date: 2023-04-30
 slug: pace-layering
 ---
+![Cultural Affordances: Pace Layering](images/essays/cultural-affordances-pace-layering.jpg)
+
 The idea of building for the "Long Now" reminds me a lot of Taleb's concept of Anti-fragility. The idea of a combination of strength and flexibility being a pre-requisite for anti-fragility itself has analogues from the world of sword making. The best swords have a combination of a hard edge that can remain sharp, and a soft core that can resist shocks. The Long Now Foundation isn't Stewart Brand's first foray into this ideology. His Whole Earth Catalogue was a major part of the counterculture movement of the 60's and 70’s and laid the foundation for things like blogs and wikis, which in turn are now a major part of our current civilization's attempt to resist shocks while preserving culture.
 
 Comparing the Pace-Layering framework to the Cultural Affordances framework, we can see two different framings of the same concept of change. Where Pace Layering takes an outside-in approach that looks at the whole system and the rate of change, the cultural affordances framework looks inside, starting with a very individual circle of "cognition" and building outwards towards social systems and culture. The definition of culture in cultural affordances also seems to be at a smaller scale than what Brand seems to be describing. The small-c culture is what affects things like infrastructure and governance, while the long-term Culture seems to be what is affected by those layers.
