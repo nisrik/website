@@ -218,3 +218,14 @@ html.js body.home .hdr:not(.scrolled) .nav a[aria-current] { color: var(--champa
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo .g-brass { display: none; } :root:not([data-theme="light"]) .logo .g-champ { display: block; } }
 @media (hover: hover) { .logo:hover .g { opacity: 1; } }
 .logo:focus-visible .g { opacity: 1; }
+
+
+/* Hide link arrows on touchscreen devices */
+@media (hover: none) and (pointer: coarse) {
+  a::after,
+  .stop::after {
+    content: none !important;
+    display: none !important;
+  }
+}
+
